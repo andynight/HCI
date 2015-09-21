@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tdc.trabajandodesdecasa.zapatos"
+    style="@style/Madres">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottom"
+        android:layout_margin="0dp"
+        style="@style/Encabezado"></RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Madres"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/relativeLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+            style="@style/Encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout2"
+            android:layout_margin="0dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="185dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:background="@mipmap/ic_launcher"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/guarnicion"
+            android:background="@mipmap/guarnicion"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/compraventa"
+            android:background="@mipmap/venta"
+            android:layout_below="@+id/guarnicion"
+            android:layout_alignStart="@+id/guarnicion"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/reparación"
+            android:background="@mipmap/reparacion"
+            android:layout_below="@+id/compraventa"
+            android:layout_alignStart="@+id/compraventa"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guarnicion"
+            android:id="@+id/Guarnicion"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_above="@+id/compraventa"
+            android:layout_alignEnd="@+id/guarnicion"
+            android:layout_alignStart="@+id/guarnicion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compra"
+            android:id="@+id/Compraventa"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_above="@+id/reparación"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reparar"
+            android:id="@+id/Reparacion"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_below="@+id/reparación"
+            android:layout_alignEnd="@+id/reparación"
+            android:layout_alignStart="@+id/reparación" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.tdc.trabajandodesdecasa.MainActivity"/>
+      <point      
+        x = "144"      
+        y = "32"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.example.tdc.trabajandodesdecasa.MainActivity"/>
+      <point      
+        x = "2276"      
+        y = "36"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.tdc.trabajandodesdecasa.menu_main"/>
+      <point      
+        x = "1020"      
+        y = "12"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.tdc.trabajandodesdecasa.Trabajando_Desde_Casa"/>
+      <point      
+        x = "924"      
+        y = "32"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.tdc.trabajandodesdecasa.Login"/>
+      <point      
+        x = "1784"      
+        y = "248"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.example.tdc.trabajandodesdecasa.Login"/>
+      <point      
+        x = "1660"      
+        y = "716"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

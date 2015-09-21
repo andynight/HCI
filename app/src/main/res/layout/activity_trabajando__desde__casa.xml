@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/Contenedor"
+    style="@style/Madres">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/body"
+        android:layout_above="@+id/bottom">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/zapatos"
+            android:background="@mipmap/zapato"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/ropa"
+            android:layout_toStartOf="@+id/Manualidades" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/ropa"
+            android:background="@mipmap/ropa"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/comida"
+            android:background="@mipmap/comida"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/ropa"
+            android:layout_toEndOf="@+id/Manualidades" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/belleza"
+            android:background="@mipmap/belleza"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/ropa"
+            android:layout_toStartOf="@+id/ropa"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/niñera"
+
+            android:background="@mipmap/niniera"
+            android:layout_alignTop="@+id/belleza"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/aseo"
+            android:background="@mipmap/aseo"
+            android:layout_alignTop="@+id/niñera"
+            android:layout_alignStart="@+id/Comida" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/manualidades"
+            android:background="@mipmap/manualidades"
+            android:layout_below="@+id/Niniera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zapatos"
+            android:id="@+id/Zapatos"
+            android:layout_above="@+id/belleza"
+            android:layout_alignStart="@+id/zapatos"
+            android:layout_alignEnd="@+id/zapatos"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ropa"
+            android:id="@+id/Ropas"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/Zapatos"
+            android:layout_alignEnd="@+id/ropa"
+            android:layout_alignStart="@+id/ropa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comida"
+            android:id="@+id/Comida"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/belleza"
+            android:layout_alignStart="@+id/comida"
+            android:layout_alignEnd="@+id/comida"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belleza"
+            android:id="@+id/Belleza"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/belleza"
+            android:layout_alignStart="@+id/belleza"
+            android:layout_alignEnd="@+id/belleza"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/niniera"
+            android:id="@+id/Niniera"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/niñera"
+            android:layout_alignEnd="@+id/niñera"
+            android:layout_alignStart="@+id/niñera"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aseo"
+            android:id="@+id/Aseo"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/aseo"
+            android:layout_alignEnd="@+id/aseo"
+            android:layout_alignStart="@+id/aseo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manualidades"
+            android:id="@+id/Manualidades"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/manualidades"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottom"
+        android:layout_margin="0dp"
+        style="@style/Encabezado">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185dp">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

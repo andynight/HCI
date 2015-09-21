@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Trabajando Desde Casa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Bienvenido">Bienvenido a</string>
+    <string name="Presentación">La cual es una aplicación móvil que pretende
+    suministrar un ingreso adicional a aquellas madres cabeza de familia mediante
+    la venda de productos y/o servicios</string>
+    <string name="ingresar">Comenzar</string>
+    <string name="zapatos">Zapatos</string>
+    <string name="ropa">Ropa</string>
+    <string name="comida">Comidas</string>
+    <string name="belleza">Belleza</string>
+    <string name="niniera">Niñera</string>
+    <string name="aseo">Aseo</string>
+    <string name="manualidades">Manualidades</string>
+    <string name="guarnicion">Guarnición</string>
+    <string name="compra">Comprar</string>
+    <string name="reparar">Reparación</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_menu_main">menu_main</string>
+    <string name="title_activity_trabajando__desde__casa">Trabajando_Desde_Casa</string>
+    <string name="title_activity_zapatos">zapatos</string>
+    <string name="title_activity_mapa">mapa</string>
+    <string name="ofertar">Ofertar</string>
+    <string name="comprar">Comprar</string>
+    <string name="suggestlogin">Para poder ofertar sus productos o servicios primero tiene que identificarse</string>
+    <string name="login">Login</string>
+    <string name="ingresar2">Ingresar</string>
+    <string name="registro">Registrese</string>
+    <string name="title_activity_ofertar_calzado">Ofertar-Calzado</string>
+    <string-array name="opproser">
+        <item>presione aquí</item>
+        <item>Guarnición</item>
+        <item>Vender Zapatos</item>
+        <item>Reparación</item>
+    </string-array>
+    <string name="title_activity_ropa">ropa</string>
+    <string name="title_activity_comida">comida</string>
+    <string name="title_activity_belleza">belleza</string>
+    <string name="title_activity_niniera">niniera</string>
+    <string name="title_activity_aseo">Aseo</string>
+    <string name="title_activity_manualidades">manualidades</string>
+</resources>
