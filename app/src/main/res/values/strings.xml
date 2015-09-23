@@ -41,4 +41,23 @@
     <string name="title_activity_niniera">niniera</string>
     <string name="title_activity_aseo">Aseo</string>
     <string name="title_activity_manualidades">manualidades</string>
+    <string name="Planchar">Planchar</string>
+    <string name="Lavar">Lavar</string>
+    <string name="Peluqueria">Peluqueria</string>
+    <string name="Manicura">Manicura</string>
+    <string name="Tintura">Tintura</string>
+    <string name="Facial">Facial</string>
+    <string name="bordados">Bordados</string>
+    <string name="enamorados">Amor y Amistad</string>
+    <string name="arte">Arte</string>
+    <string name="detalles">Detalles</string>
+    <string name="tareas">Tareas</string>
+    <string name="confec">Confecciones</string>
+    <string name="compraropa">Comprar Ropa</string>
+    <string name="clinica">Clinica de Ropa</string>
+    <string name="bebeuno">Niños Hasta 1 Año</string>
+    <string name="bebedos">Niños Hasta 3 Años</string>
+    <string name="ninouno">Niños Hasta 9 años</string>
+    <string name="ninodos">Niños Mayores de 10 Años</string>
+    <string name="adulto">Adulto Mayor</string>
 </resources>
