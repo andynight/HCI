@@ -4,9 +4,94 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.tdc.trabajandodesdecasa.ropa">
+    tools:context="com.example.tdc.trabajandodesdecasa.ropa"
+    style="@style/Madres">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/confeccoones"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/confecciones" />
 
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/compraropa"
+        android:background="@mipmap/comropa"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/confeccoones"
+        android:layout_toEndOf="@+id/confeccoones"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/clinicaderopa"
+        android:background="@mipmap/repararopa"
+        android:layout_alignTop="@+id/compraropa"
+        android:layout_toEndOf="@+id/compraropa"
+        android:layout_marginLeft="10dp" />
+
+    <RelativeLayout
+        style="@style/Encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout10"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout9"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button16"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confec"
+        android:id="@+id/Confeccioens"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/confeccoones"
+        android:layout_alignEnd="@+id/confeccoones" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compraropa"
+        android:id="@+id/Compra"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/Confeccioens"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clinica"
+        android:id="@+id/Clinica"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/Compra"
+        android:layout_alignStart="@+id/clinicaderopa"
+        android:layout_alignEnd="@+id/clinicaderopa" />
 </RelativeLayout>

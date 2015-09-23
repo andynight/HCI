@@ -71,29 +71,29 @@
             android:layout_height="80dp"
             android:id="@+id/guarnicion"
             android:background="@mipmap/guarnicion"
-            android:layout_marginTop="40dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp" />
+            android:layout_toStartOf="@+id/compraventa"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp" />
 
         <Button
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:id="@+id/compraventa"
             android:background="@mipmap/venta"
-            android:layout_below="@+id/guarnicion"
-            android:layout_alignStart="@+id/guarnicion"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_alignTop="@+id/guarnicion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
 
         <Button
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:id="@+id/reparación"
             android:background="@mipmap/reparacion"
-            android:layout_below="@+id/compraventa"
-            android:layout_alignStart="@+id/compraventa"
-            android:layout_marginTop="20dp" />
+            android:layout_alignTop="@+id/compraventa"
+            android:layout_toEndOf="@+id/compraventa"
+            android:layout_marginLeft="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,9 +102,10 @@
             android:id="@+id/Guarnicion"
             android:gravity="center_horizontal"
             android:textStyle="bold"
-            android:layout_above="@+id/compraventa"
-            android:layout_alignEnd="@+id/guarnicion"
-            android:layout_alignStart="@+id/guarnicion" />
+            android:layout_alignBaseline="@+id/Compraventa"
+            android:layout_alignBottom="@+id/Compraventa"
+            android:layout_alignStart="@+id/guarnicion"
+            android:layout_alignEnd="@+id/guarnicion" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,8 +114,9 @@
             android:id="@+id/Compraventa"
             android:gravity="center_horizontal"
             android:textStyle="bold"
-            android:layout_above="@+id/reparación"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignTop="@+id/Reparacion"
+            android:layout_alignEnd="@+id/compraventa"
+            android:layout_alignStart="@+id/compraventa" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -124,8 +126,8 @@
             android:gravity="center_horizontal"
             android:textStyle="bold"
             android:layout_below="@+id/reparación"
-            android:layout_alignEnd="@+id/reparación"
-            android:layout_alignStart="@+id/reparación" />
+            android:layout_alignStart="@+id/reparación"
+            android:layout_alignEnd="@+id/reparación" />
 
     </RelativeLayout>
 </RelativeLayout>

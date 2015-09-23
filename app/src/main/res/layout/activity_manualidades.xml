@@ -4,9 +4,143 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.tdc.trabajandodesdecasa.manualidades">
+    tools:context="com.example.tdc.trabajandodesdecasa.manualidades"
+    style="@style/Madres">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        style="@style/Encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout9"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button12"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/bordados"
+        android:background="@mipmap/bordados"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/enamorados"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/enamorados"
+        android:background="@mipmap/enamorados"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/bordados"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/arte"
+        android:background="@mipmap/arte"
+        android:layout_marginRight="0dp"
+        android:layout_alignTop="@+id/enamorados"
+        android:layout_toEndOf="@+id/enamorados"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/detalle"
+        android:background="@mipmap/detalles"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/bordados"
+        android:layout_alignStart="@+id/bordados"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/tareas"
+        android:background="@mipmap/tareas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignTop="@+id/detalle"
+        android:layout_toEndOf="@+id/detalle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bordados"
+        android:id="@+id/Bordados"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_above="@+id/detalle"
+        android:layout_alignStart="@+id/bordados"
+        android:layout_alignEnd="@+id/bordados" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enamorados"
+        android:id="@+id/Enamorados"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/Bordados"
+        android:layout_alignStart="@+id/enamorados"
+        android:layout_alignEnd="@+id/enamorados" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arte"
+        android:id="@+id/Arte"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_above="@+id/detalle"
+        android:layout_alignEnd="@+id/arte"
+        android:layout_alignStart="@+id/arte" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detalles"
+        android:id="@+id/Detelles"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/detalle"
+        android:layout_alignStart="@+id/detalle"
+        android:layout_toStartOf="@+id/Enamorados"
+        android:layout_alignEnd="@+id/detalle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tareas"
+        android:id="@+id/Tareas"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/tareas"
+        android:layout_alignTop="@+id/Detelles"
+        android:layout_alignEnd="@+id/tareas" />
 
 </RelativeLayout>

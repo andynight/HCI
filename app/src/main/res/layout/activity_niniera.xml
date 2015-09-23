@@ -4,9 +4,143 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.tdc.trabajandodesdecasa.niniera">
+    tools:context="com.example.tdc.trabajandodesdecasa.niniera"
+    style="@style/Madres">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        style="@style/Encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout11"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button17"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/unaño"
+        android:background="@mipmap/bebes"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/tresaños"
+        android:background="@mipmap/bebes2"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/unaño"
+        android:layout_toEndOf="@+id/unaño"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/nueveaños"
+        android:background="@mipmap/ninos1"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/unaño"
+        android:layout_toEndOf="@+id/tresaños"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/diezaños"
+        android:background="@mipmap/ninos2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/unaño"
+        android:layout_alignStart="@+id/unaño"
+        android:layout_marginStart="49dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/Adultos"
+        android:background="@mipmap/adultos"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/diezaños"
+        android:layout_toEndOf="@+id/diezaños"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bebeuno"
+        android:id="@+id/bebeuno"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/tresaños"
+        android:layout_alignStart="@+id/unaño"
+        android:layout_alignEnd="@+id/unaño" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bebedos"
+        android:id="@+id/bebedos"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/tresaños"
+        android:layout_alignEnd="@+id/tresaños"
+        android:layout_alignStart="@+id/tresaños" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ninouno"
+        android:id="@+id/ninouno"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/nueveaños"
+        android:layout_alignStart="@+id/nueveaños"
+        android:layout_alignEnd="@+id/nueveaños" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ninodos"
+        android:id="@+id/ninodos"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/diezaños"
+        android:layout_alignStart="@+id/diezaños"
+        android:layout_alignEnd="@+id/diezaños" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adulto"
+        android:id="@+id/adulto"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/ninodos"
+        android:layout_alignStart="@+id/Adultos"
+        android:layout_alignEnd="@+id/Adultos" />
 
 </RelativeLayout>
